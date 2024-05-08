@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <!-- Your navigation bar or header content here -->
+    <!-- Include the _LoginPartial.cshtml -->
+  @*   <partial name="_LoginPartial" /> *@
+
+    <!-- Your main content container -->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Your footer content here -->
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

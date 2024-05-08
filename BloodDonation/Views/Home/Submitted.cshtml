@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .success-container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .success-icon {
+            font-size: 60px;
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            font-size: 24px;
+            color: green;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: darkred;
+            border-color: darkred;
+        }
+
+            .btn:hover {
+                background-color: #8B0000; /* Darker shade of dark red on hover */
+                border-color: #8B0000;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 success-container">
+                <div class="success-icon">&#10004;</div>
+                <div class="success-message">Form Successfully Submitted!</div>
+                <a href="#" class="btn btn-dark"asp-controller="Home" asp-action="Index">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

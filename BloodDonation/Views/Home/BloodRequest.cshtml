@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+       
+        {
+            background-color: darkred;
+            border-color: darkred;
+            color: #fff;
+        }
+
+        
+       
+        .btn-darkred {
+            background-color: darkred;
+            border-color: darkred;
+            color: white;
+        }
+
+            .btn-darkred:hover {
+                background-color: #8B0000; /* Darker shade of dark red on hover */
+                border-color: #8B0000;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 class="form-title">Blood Request Form</h2>
+            <form>
+                <!-- Patient Information -->
+                <div class="form-group">
+                    <label for="fullName">Full Name of the Patient</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender" required>
+                            <option value="">Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="bloodType">Blood Type (if known)</label>
+                        <input type="text" class="form-control" id="bloodType">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="hospitalName">Hospital/Healthcare Facility Name</label>
+                        <input type="text" class="form-control" id="hospitalName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="phoneNumber">Contact Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Contact Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                
+                <!-- Blood Requirements -->
+                <h4>Blood Requirements:</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="bloodTypeRequired">Blood Type Required (if known)</label>
+                        <input type="text" class="form-control" id="bloodTypeRequired">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="bloodUnitsNeeded">Quantity of Blood Units Needed</label>
+                        <input type="number" class="form-control" id="bloodUnitsNeeded" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="dateTimeNeeded">Date and Time Needed</label>
+                        <input type="datetime-local" class="form-control" id="dateTimeNeeded" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="bloodComponents">Specific Blood Components Required</label>
+                        <input type="text" class="form-control" id="bloodComponents">
+                    </div>
+                </div>
+                
+                <!-- Medical Information -->
+                <h4>Medical Information:</h4>
+                <div class="form-group">
+                    <label for="reasonTransfusion">Reason for Blood Transfusion</label>
+                    <textarea class="form-control" id="reasonTransfusion" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="medicalConditions">Any Known Allergies or Medical Conditions</label>
+                    <textarea class="form-control" id="medicalConditions" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="recentSurgeries">Any Recent Surgeries or Medical Procedures</label>
+                    <textarea class="form-control" id="recentSurgeries" rows="3"></textarea>
+                </div>
+                
+                <!-- Additional Information -->
+                <h4>Additional Information:</h4>
+                <div class="form-group">
+                    <label for="specialInstructions">Special Instructions or Requests</label>
+                    <textarea class="form-control" id="specialInstructions" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="donorPreferences">Donor Preferences</label>
+                    <textarea class="form-control" id="donorPreferences" rows="3"></textarea>
+                </div>
+
+                <a  type="submit" class="btn btn-donate btn-block btn-darkred" asp-controller="Home" asp-action="Submitted">Request Blood</a>
+
+            </form>
+            </body>

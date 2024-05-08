@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .btn-custom {
+            background-color: #8B0000; /* Dark Red */
+            border-color: #8B0000; /* Dark Red */
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+            .btn-custom:hover {
+                background-color: #800000; /* Darker Red on hover */
+                border-color: #800000; /* Darker Red on hover */
+            }
+
+        .btn-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .body {
+            background-color: peachpuff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center btn-container">
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-custom mr-3">Register as a Health Worker or an Organization</a>
+                <a href="/Identity/Account/Login" class="btn btn-custom">Login as a Health Worker or an Organization</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

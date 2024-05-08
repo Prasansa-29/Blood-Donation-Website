@@ -1,0 +1,148 @@
+﻿@page
+@model RegisterModel
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .btn-register {
+            background-color: darkred; /* Red */
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-register:hover {
+            background-color: darkred; /* Darker blue on hover */
+        }
+
+        .btn-darkred {
+            background-color: darkred;
+            border-color: darkred;
+            color: white;
+        }
+
+        .btn-darkred:hover {
+            background-color: #8B0000; /* Darker shade of dark red on hover */
+            border-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-lg-6 mx-auto border p-3">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h2 class="text-center mb-3">Register Here </h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.FirstName">First Name </label>
+                    <input asp-for="Input.FirstName" class="form-control" autocomplete=off aria-required="true" placeholder="Chandra" />
+                   
+                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.LastName">Last Name</label>
+                    <input asp-for="Input.LastName" class="form-control" autocomplete=off aria-required="true" placeholder="Sitaula" />
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.PhoneNumber">Phone Number </label>
+                    <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="phonenumber" aria-required="true" />
+                   <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.Email">Email</label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                     <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.Password">Password</label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                     <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.University">From which college/university are you?</label>
+                    <input asp-for="Input.University" class="form-control" autocomplete=off aria-required="true" placeholder="University" />
+                    <span asp-validation-for="Input.University" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.Hospital">At which hospital/organization do you work?</label>
+                    <input asp-for="Input.Hospital" class="form-control" autocomplete="off" aria-required="true" placeholder="Hospital" />
+                   
+                    <span asp-validation-for="Input.Hospital" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <label asp-for="Input.Position">On what position are you?</label>
+                    <input asp-for="Input.Position" class="form-control" autocomplete=off aria-required="true" placeholder="Position" />
+                   
+                    <span asp-validation-for="Input.Position" class="text-danger"></span>
+                </div>
+                <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-darkred">Register</button>
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

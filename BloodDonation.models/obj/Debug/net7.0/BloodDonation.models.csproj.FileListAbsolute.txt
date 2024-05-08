@@ -1,0 +1,11 @@
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\bin\Debug\net7.0\BloodDonation.models.deps.json
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\bin\Debug\net7.0\BloodDonation.models.dll
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\bin\Debug\net7.0\BloodDonation.models.pdb
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\BloodDonation.models.GeneratedMSBuildEditorConfig.editorconfig
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\BloodDonation.models.AssemblyInfoInputs.cache
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\BloodDonation.models.AssemblyInfo.cs
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\BloodDonation.models.csproj.CoreCompileInputs.cache
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\BloodDonation.models.dll
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\refint\BloodDonation.models.dll
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\BloodDonation.models.pdb
+C:\DOT NET PROJECTS\BloodDonation\BloodDonation.models\obj\Debug\net7.0\ref\BloodDonation.models.dll
